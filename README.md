@@ -111,12 +111,12 @@ Kullback-Leibler divergence (KL divergence) is a measure of how one probability 
 
 ### Formula
 
-For tensors of the same shape `$y_pred$` and `$y_true$`, where `$y_pred$` is the input and `$y_true$` is the target, we define the pointwise KL-divergence as:
+For tensors of the same shape `y_pred` and `y_true`, where `y_pred` is the input and `y_true` is the target, we define the pointwise KL-divergence as:
 
 $$L(y_pred, y_true) = y_true * (log(y_true) - log(y_pred))$$
 
 
-To avoid underflow issues when computing this quantity, this loss expects the argument `input` in the log-space. The argument `target` may also be provided in the log-space if `$log_target=True$`.
+To avoid underflow issues when computing this quantity, this loss expects the argument `input` in the log-space. The argument `target` may also be provided in the log-space if `log_target=True`.
 
 ### Example
 
