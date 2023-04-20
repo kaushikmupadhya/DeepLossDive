@@ -14,10 +14,10 @@ This repository contains the following:
 ### Requirements
 To run the code in this repository, you will need to have the following installed:
 
-Python 3.6 or higher
-PyTorch
-Jupyter Notebook
-Google Collab
+- Python 3.6 or higher
+- PyTorch
+- Jupyter Notebook
+- Google Collab
 
 ## Classification Losses in PyTorch Vision
 
