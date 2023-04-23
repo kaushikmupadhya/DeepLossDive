@@ -67,6 +67,7 @@ print(loss)
 ## Hinge Loss
 This loss is used for binary classification and is defined as: $$L = max(0, 1 − t . y)$$
  where $t$ is the true label (+1 or -1) and $y$ is the predicted score.
+ 
 Here’s an example of using hinge loss in PyTorch:
 
 ```
@@ -109,16 +110,11 @@ print(loss)
 
 Kullback-Leibler divergence (KL divergence) is a measure of how one probability distribution differs from another. In PyTorch, the `KLDivLoss` class can be used to compute the KL divergence loss between the input and target distributions.
 
-### Formula
-
 For tensors of the same shape `y_pred` and `y_true`, where `y_pred` is the input and `y_true` is the target, we define the pointwise KL-divergence as:
-
 $$L(y_pred, y_true) = y_true * (log(y_true) - log(y_pred))$$
 
 
 To avoid underflow issues when computing this quantity, this loss expects the argument `input` in the log-space. The argument `target` may also be provided in the log-space if `log_target=True`.
-
-### Example
 
 Here is an example of how to use `KLDivLoss` in PyTorch:
 
