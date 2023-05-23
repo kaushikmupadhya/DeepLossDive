@@ -24,7 +24,8 @@ To run the code in this repository, you will need to have the following installe
 PyTorch Vision provides several loss functions for classification tasks. These include:
 
 ### Cross-Entropy Loss
-This loss measures the dissimilarity between the predicted probability distribution and the true distribution. The formula for cross-entropy loss is: $$L = -\sum_{i} y_i \log(p_i)$$ where $y_i$ is the true label and $p_i$ is the predicted probability for class $i$.
+This loss measures the dissimilarity between the predicted probability distribution and the true distribution. The formula for cross-entropy loss is: $$L = -\sum_{i} y_i \log(p_i)$$ 
+where $y_i$ is the true label and $p_i$ is the predicted probability for class $i$.
 
 Here's an example of using cross-entropy loss in PyTorch:
 
@@ -87,7 +88,8 @@ print(loss)
 ```
 
 ## Binary Cross-Entropy Loss
-This loss is used for binary classification tasks and is defined as: $$L = -\sum_{i} y_i \log(p_i) + (1-y_i) \log(1-p_i)$$ where $y_i$ is the true label and $p_i$ is the predicted probability for class $i$.
+This loss is used for binary classification tasks and is defined as: $$L = -\sum_{i} y_i \log(p_i) + (1-y_i) \log(1-p_i)$$ 
+where $y_i$ is the true label and $p_i$ is the predicted probability for class $i$.
 
 Here's an example of using binary cross-entropy loss in PyTorch:
 
